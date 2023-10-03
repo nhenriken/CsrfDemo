@@ -1,0 +1,13 @@
+@model CsrfDemo.Models.ChangeEmailViewModel
+
+<h2>Edit Email</h2>
+
+<form asp-action="ChangeEmail" method="get">
+    <div class="form-group">
+        <label asp-for="NewEmail">New Email</label>
+        <input asp-for="NewEmail" class="form-control" />
+        <span asp-validation-for="NewEmail" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Save Changes</button>
+</form>
